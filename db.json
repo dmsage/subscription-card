@@ -1,0 +1,77 @@
+{
+  "plans": [
+    {
+      "id": "basic",
+      "name": "Basic Plan",
+      "description": "Perfect for individuals getting started",
+      "monthlyPrice": 9.99,
+      "features": [
+        "Up to 5 projects",
+        "10GB storage",
+        "Email support",
+        "Basic analytics",
+        "Mobile app access"
+      ]
+    },
+    {
+      "id": "pro",
+      "name": "Pro Plan",
+      "description": "Ideal for growing teams and businesses",
+      "monthlyPrice": 29.99,
+      "popular": true,
+      "features": [
+        "Unlimited projects",
+        "100GB storage",
+        "Priority support",
+        "Advanced analytics",
+        "Mobile app access",
+        "Team collaboration",
+        "API access",
+        "Custom integrations"
+      ]
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise Plan",
+      "description": "For large organizations with advanced needs",
+      "monthlyPrice": 99.99,
+      "features": [
+        "Unlimited projects",
+        "1TB storage",
+        "24/7 dedicated support",
+        "Advanced analytics",
+        "Mobile app access",
+        "Team collaboration",
+        "API access",
+        "Custom integrations",
+        "SSO authentication",
+        "Advanced security",
+        "Custom branding",
+        "Dedicated account manager"
+      ]
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "sub_1757562721527",
+      "planId": "basic",
+      "userId": "user_123",
+      "status": "cancelled",
+      "startDate": "2025-09-11T03:52:01.527Z",
+      "plan": {
+        "id": "basic",
+        "name": "Basic Plan",
+        "description": "Perfect for individuals getting started",
+        "monthlyPrice": 9.99,
+        "features": [
+          "Up to 5 projects",
+          "10GB storage",
+          "Email support",
+          "Basic analytics",
+          "Mobile app access"
+        ]
+      },
+      "endDate": "2025-09-11T03:52:18.657Z"
+    }
+  ]
+}

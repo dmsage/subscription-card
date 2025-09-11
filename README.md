@@ -20,21 +20,29 @@ A React TypeScript app for managing subscription plans.
 
 ```bash
 npm install
-npm start
+npm run dev  # Starts both UI and JSON server
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
+Open [http://localhost:8080](http://localhost:8080)
 
 ## Scripts
 
-- `npm start` - Development server
+- `npm run dev` - Start both React app and JSON server (recommended)
+- `npm start` - Development server only (requires json-server running separately)
+- `npm run json-server` - Start JSON server only (port 5000)
 - `npm test` - Run tests
 - `npm run build` - Production build
 
-## Plans
+## API Endpoints
 
-- **Basic** - $9.99/month
-- **Pro** - $29.99/month (Popular)
-- **Enterprise** - $99.99/month
+The app now uses json-server for a real REST API experience:
+- React app: [http://localhost:8080](http://localhost:8080)
+- JSON Server: [http://localhost:5000](http://localhost:5000)
 
-The app uses a mock API with 1-second delays to simulate real backend behavior.
+API endpoints:
+- `GET /plans` - Get all subscription plans
+- `GET /plans/:id` - Get a specific plan
+- `GET /subscriptions` - Get all subscriptions
+- `POST /subscriptions` - Create a new subscription
+- `PUT /subscriptions/:id` - Update a subscription
+
