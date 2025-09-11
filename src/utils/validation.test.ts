@@ -9,7 +9,7 @@ import {
   validateEmail,
   validatePhone,
   formatExpiryDate,
-} from '../validation';
+} from './validation';
 
 describe('Validation Utils', () => {
   describe('validateName', () => {

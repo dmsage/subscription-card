@@ -3,8 +3,8 @@ jest.mock('axios', () => ({
   create: jest.fn(() => ({})),
 }));
 
-import { mockApi } from '../mockApi';
-import { CheckoutData } from '../../types';
+import { mockApi } from './mockApi';
+import { CheckoutData } from './../types';
 
 // Mock setTimeout to avoid actual delays in tests
 jest.useFakeTimers();

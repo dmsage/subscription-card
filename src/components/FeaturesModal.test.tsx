@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import FeaturesModal from '../FeaturesModal';
-import { Plan } from '../../types';
+import FeaturesModal from './FeaturesModal';
+import { Plan } from '../types';
 
 const mockPlan: Plan = {
   id: 'test-plan',
