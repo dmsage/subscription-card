@@ -15,6 +15,8 @@ A React TypeScript app for managing subscription plans.
 - Material UI
 - React Router
 - Jest for testing
+- JSON server
+- Axios
 
 ## Getting Started
 
@@ -35,7 +37,7 @@ Open [http://localhost:8080](http://localhost:8080)
 
 ## API Endpoints
 
-The app now uses json-server for a real REST API experience:
+The app uses json-server for a real REST API experience:
 - React app: [http://localhost:8080](http://localhost:8080)
 - JSON Server: [http://localhost:5000](http://localhost:5000)
 
