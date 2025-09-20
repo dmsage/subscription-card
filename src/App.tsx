@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import {
   Container,
   AppBar,
@@ -22,17 +23,6 @@ import PlanListPage from './pages/PlanListPage';
 import ComparePlansPage from './pages/ComparePlansPage';
 import CheckoutPage from './pages/CheckoutPage';
 import PlanManagementPage from './pages/PlanManagementPage';
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#1976d2',
-    },
-    secondary: {
-      main: '#dc004e',
-    },
-  },
-});
 
 function Navigation() {
   const location = useLocation();
@@ -88,6 +78,24 @@ function Navigation() {
 }
 
 function App() {
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+
+  const theme = React.useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode: prefersDarkMode ? 'dark' : 'light',
+          primary: {
+            main: '#1976d2',
+          },
+          secondary: {
+            main: '#dc004e',
+          },
+        },
+      }),
+    [prefersDarkMode],
+  );
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
